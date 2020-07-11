@@ -1,21 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { ListView } from './src/components/list-view';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Initial commit of Peacefulli!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return <ListView></ListView>;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
