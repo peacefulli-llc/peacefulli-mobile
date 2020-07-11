@@ -4,14 +4,7 @@ exports[`BottomTabNav Tests font not loaded 1`] = `
 <AppLoading
   onError={[Function]}
   onFinish={[Function]}
-  startAsync={
-    Promise {
-      "_U": 0,
-      "_V": 0,
-      "_W": null,
-      "_X": null,
-    }
-  }
+  startAsync={[Function]}
 />
 `;
 
