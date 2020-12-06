@@ -15,6 +15,7 @@ export interface EventCardProps {
     date: String
     location: String
     description: String
+    title: String
 }
 
 export interface EventCardState {
@@ -44,7 +45,8 @@ export class EventCard extends PureComponent<EventCardProps, EventCardState>{
         if (this.state && this.state.fontLoaded) {
             return (
                 <TouchableOpacity onPress={this.onPress} style={styles.container}>
-                    <Image style={styles.image} source={{ uri: 'https://i.stack.imgur.com/khVpE.png' }} />
+                    <Image style={styles.image} source={this.props.imageSource} />
+                    <Text style={styles.textPrimary}>{this.props.title}</Text>
                     <Text style={styles.textPrimary}>{this.props.date + " - " + this.props.location}</Text>
                     <Text style={styles.textSecondary}>{this.props.description}</Text>
                 </TouchableOpacity>
