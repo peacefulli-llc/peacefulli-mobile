@@ -5,9 +5,12 @@
 - Contact your manager to create a peacefulli email address
 - Install [VS Code](https://code.visualstudio.com/download)
 - Install [git](https://git-scm.com/)
-  - Setup your config name and email `$ git config --global user.name "First Last" $ git config --global user.email "firstlast@peacefulli.com"`
+  - Setup your config name and email
+  - `$ git config --global user.name "First Last"`
+  - `$ git config --global user.email "firstlast@peacefulli.com"`
 - Install [credential helper](https://www.atlassian.com/git/tutorials/install-git)
 - Install [node.js](https://nodejs.org/en/)
+- Install [homebrew](https://brew.sh/)
 - Install watchman `brew install watchman`
 - Install Expo `$ npm install --global expo-cli`
 - Install Yarn `$ brew install yarn`
