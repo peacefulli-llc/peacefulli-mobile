@@ -33,6 +33,10 @@ Here is how get started developing locally
 - On the left hand nav, run the app on your desired simulator
 - To develop on a physical device install the expo app and scan the QR code from the terminal or left hand nav of your expo developer
 
+## Unit Tests
+
+Run `$ npm run test` or `$ yarn test` to run local unit tests. To update the snapshots run `yarn test -u`.
+
 ## Code Review
 
 - Submit your code to a new branch
