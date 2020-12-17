@@ -1,11 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BottomTabNav Tests font not loaded 1`] = `
-<ActivityIndicator
-  animating={true}
-  color="#999999"
-  hidesWhenStopped={true}
-  size="small"
+<AppLoading
+  onError={[Function]}
+  onFinish={[Function]}
+  startAsync={
+    Promise {
+      "_U": 0,
+      "_V": 0,
+      "_W": null,
+      "_X": null,
+    }
+  }
 />
 `;
 

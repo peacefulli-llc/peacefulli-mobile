@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { ActivityIndicator } from "react-native";
+import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
 import Icon from "react-native-vector-icons/FontAwesome5";
 import { NavigationContainer } from "@react-navigation/native";
@@ -28,11 +28,6 @@ export class BottomTabNav extends PureComponent<
     this.state = { fontLoaded: false };
   }
 
-  componentDidMount = async () => {
-    await Font.loadAsync(customFonts);
-    this.setState({ fontLoaded: true });
-  };
-
   create_tab(tabDetails: TabDetails): JSX.Element {
     return (
       <Tab.Screen
@@ -57,7 +52,13 @@ export class BottomTabNav extends PureComponent<
 
   render() {
     if (!this.state.fontLoaded) {
-      return <ActivityIndicator />;
+      return (
+        <AppLoading
+          startAsync={Font.loadAsync(customFonts)}
+          onFinish={() => this.setState({ fontLoaded: true })}
+          onError={console.warn}
+        />
+      );
     }
     return (
       <NavigationContainer>
