@@ -18,23 +18,23 @@ export type TabDetails = {
   icon: string;
 };
 
-export namespace TabInfo {
-  export const SUPPORT: TabDetails = {
+export class TabInfo {
+  public static SUPPORT: TabDetails = {
     name: TabName.SUPPORT,
     component: Support,
     icon: "hand-holding-heart",
   };
-  export const HOME: TabDetails = {
+  public static HOME: TabDetails = {
     name: TabName.HOME,
     component: Home,
     icon: "home",
   };
-  export const LIST: TabDetails = {
+  public static LIST: TabDetails = {
     name: TabName.LIST,
     component: ListView,
     icon: "list",
   };
-  export const PROFILE: TabDetails = {
+  public static PROFILE: TabDetails = {
     name: TabName.PROFILE,
     component: Profile,
     icon: "user-circle",
