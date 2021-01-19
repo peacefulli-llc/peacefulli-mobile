@@ -1,6 +1,6 @@
-import EventModel from "./models/event-model";
+import EventModel from "./event-model";
 
-export default interface Database {
+export default interface EventDatabase {
   /**
    * Create a new event. The returned `Promise` allows you to perform an action
    * after success/failure.
@@ -10,7 +10,7 @@ export default interface Database {
    *
    * @example
    * // Create a new event for a protest in LA starting on August 13th, 2020
-   * Database.createEvent({
+   * eventDatabase.createEvent({
    *  title: "My Protest Title",
    *  description: "My protest description.",
    *  location: "Los Angeles, CA",
@@ -31,7 +31,7 @@ export default interface Database {
    * @returns Generic JavaScript `Promise` object
    *
    * @example
-   * Database.getEvent("xWMyZ4YEGZ")
+   * eventDatabase.getEvent("xWMyZ4YEGZ")
    *  .then((result) => {
    *    // do something with result
    *  }, (error) => {
@@ -52,7 +52,7 @@ export default interface Database {
    * // Sort the events by ascending dateTime
    * // Skip the first 20 results (pages 1 and 2)
    * // Return the next 10 results (page 3)
-   * Database.getEvents(10, 3, "dateTime")
+   * eventDatabase.getEvents(10, 3, EventFields.DATE_TIME)
    *  .then((results) => {
    *    // do something with results
    *  }, (error) => {
@@ -74,7 +74,7 @@ export default interface Database {
    *
    * @example
    * // Update an existing event with a new title and location
-   * Database.updateEvent("xWMyZ4YEGZ", {
+   * eventDatabase.updateEvent("xWMyZ4YEGZ", {
    *  title: "New Protest Title",
    *  location: "New York, NY"
    * })
@@ -93,7 +93,7 @@ export default interface Database {
    * @returns Generic JavaScript `Promise` object
    *
    * @example
-   * Database.deleteEvent("xWMyZ4YEGZ")
+   * eventDatabase.deleteEvent("xWMyZ4YEGZ")
    *  .then((result) => {
    *    // do something with result
    *  }, (error) => {

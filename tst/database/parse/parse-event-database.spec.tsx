@@ -1,33 +1,21 @@
-import DatabaseConfig from "../../src/database/database-config";
-import ParseServer from "../../src/database/parse-server";
+import EventDatabase from "../../../src/database/event/event-database";
+import ParseDatabaseFactory from "../../../src/database/parse/parse-database-factory";
+import { EventFields } from "../../../src/database/event/event-model";
 
-describe("ParseServer Tests", () => {
+describe("ParseEventDatabase Tests", () => {
   let ParseMock: any;
-  let database: any;
+  let database: EventDatabase;
 
   beforeAll(() => {
     ParseMock = jest.createMockFromModule("parse");
-    database = ParseServer.getInstance(ParseMock, null);
+    database = ParseDatabaseFactory.getInstance(
+      ParseMock,
+      null
+    ).getEventDatabase();
   });
 
   afterEach(() => {
     jest.clearAllMocks();
-  });
-
-  it("initialize ParseServer", async () => {
-    const actualDatabase = ParseServer.getInstance(ParseMock, null);
-    expect(actualDatabase).toBe(database);
-
-    expect(ParseMock.setAsyncStorage).toHaveBeenCalledTimes(1);
-    expect(ParseMock.setAsyncStorage).toHaveBeenCalledWith(null);
-    expect(ParseMock.initialize).toHaveBeenCalledTimes(1);
-    expect(ParseMock.initialize).toHaveBeenCalledWith(
-      DatabaseConfig.DEV.APP_ID,
-      DatabaseConfig.DEV.JAVASCRIPT_KEY
-    );
-    expect(ParseMock.serverURL).toBe(DatabaseConfig.DEV.SERVER_URL);
-    expect(ParseMock.Object.extend).toHaveBeenCalledTimes(1);
-    expect(ParseMock.Object.extend).toHaveBeenCalledWith("Event");
   });
 
   it("create a new event", async () => {
@@ -49,7 +37,7 @@ describe("ParseServer Tests", () => {
   });
 
   it("get list of events", async () => {
-    const events = database.getEvents(10, 1, "dateTime");
+    const events = database.getEvents(10, 1, EventFields.DATE_TIME);
     expect(ParseMock.Query).toHaveBeenCalledTimes(1);
     expect(events).toBeInstanceOf(Promise);
     expectResolve(events);
@@ -99,7 +87,7 @@ describe("ParseServer Tests", () => {
 
   function expectResolve(promise: any) {
     promise.then(
-      (result: Parse.Object) => {
+      (result: any) => {
         expect(result).not.toBeNull();
       },
       (_error: any) => {
