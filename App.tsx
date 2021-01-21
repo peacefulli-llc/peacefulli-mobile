@@ -8,7 +8,7 @@ import ParseServer from "./src/database/parse-server";
 // This disables the annoying warning messages in the simulator
 console.disableYellowBox = true;
 
-export let Database: Database = ParseServer.getInstance(Parse, AsyncStorage);
+export const Database = ParseServer.getInstance(Parse, AsyncStorage);
 
 export default function App() {
   return <BottomTabNav defaultTab={TabInfo.LIST.name} />;

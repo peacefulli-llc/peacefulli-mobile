@@ -1,1 +1,1 @@
-export { Nav } from "./bottom-tab-nav";
+export { BottomTabNav } from "./bottom-tab-nav";

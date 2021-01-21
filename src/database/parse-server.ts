@@ -1,4 +1,6 @@
-import { DatabaseConfig } from "./database-config";
+import Database from "./database";
+import DatabaseConfig from "./database-config";
+import EventModel from "./models/event-model";
 
 /**
  * ParseServer is a Database implementation that uses the Parse JavaScript SDK.
@@ -23,6 +25,16 @@ export default class ParseServer implements Database {
     return this.instance;
   }
 
+  public async createEvent(eventModel: EventModel): Promise<any> {
+    const event = new this.Event();
+    return event.save(eventModel);
+  }
+
+  public async getEvent(objectId: string): Promise<any> {
+    const query = new this.Parse.Query(this.Event);
+    return query.get(objectId);
+  }
+
   public async getEvents(
     numResults: number,
     pageNumber: number,
@@ -39,6 +51,21 @@ export default class ParseServer implements Database {
 
     const results = await query.find();
     return results;
+  }
+
+  public async updateEvent(
+    objectId: string,
+    eventModel: EventModel
+  ): Promise<any> {
+    this.getEvent(objectId).then((event: Parse.Object) => {
+      return event.save(eventModel);
+    });
+  }
+
+  public async deleteEvent(objectId: string): Promise<any> {
+    this.getEvent(objectId).then((event: Parse.Object) => {
+      return event.destroy();
+    });
   }
 
   private constructor(Parse: any, AsyncStorage: any) {

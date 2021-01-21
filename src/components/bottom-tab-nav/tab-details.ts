@@ -19,22 +19,22 @@ export type TabDetails = {
 };
 
 export class TabInfo {
-  public static SUPPORT: TabDetails = {
+  public static readonly SUPPORT: TabDetails = {
     name: TabName.SUPPORT,
     component: Support,
     icon: "hand-holding-heart",
   };
-  public static HOME: TabDetails = {
+  public static readonly HOME: TabDetails = {
     name: TabName.HOME,
     component: Home,
     icon: "home",
   };
-  public static LIST: TabDetails = {
+  public static readonly LIST: TabDetails = {
     name: TabName.LIST,
     component: ListView,
     icon: "list",
   };
-  public static PROFILE: TabDetails = {
+  public static readonly PROFILE: TabDetails = {
     name: TabName.PROFILE,
     component: Profile,
     icon: "user-circle",
