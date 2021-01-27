@@ -54,7 +54,7 @@ export class BottomTabNav extends PureComponent<
     if (!this.state.fontLoaded) {
       return (
         <AppLoading
-          startAsync={Font.loadAsync(customFonts)}
+          startAsync={async () => { await Font.loadAsync(customFonts) }}
           onFinish={() => this.setState({ fontLoaded: true })}
           onError={console.warn}
         />

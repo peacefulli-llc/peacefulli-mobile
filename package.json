@@ -16,6 +16,7 @@
     "test"
   ],
   "dependencies": {
+    "@parse/react-native": "^0.0.1-alpha.13",
     "@react-native-async-storage/async-storage": "^1.13.2",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/bottom-tabs": "^5.11.2",
@@ -23,10 +24,10 @@
     "babel-preset-react-native": "^4.0.1",
     "expo": "~38.0.8",
     "expo-status-bar": "^1.0.2",
-    "parse": "^2.19.0",
+    "parse": "^3.0.0",
     "react": "16.13.1",
     "react-dom": "~16.11.0",
-    "react-native": "0.63.4",
+    "react-native": "0.62.2",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-reanimated": "^1.9.0",
     "react-native-screens": "^2.9.0",

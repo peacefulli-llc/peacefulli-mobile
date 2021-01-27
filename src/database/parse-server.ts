@@ -1,3 +1,5 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import Parse from "parse/react-native";
 import Database from "./database";
 import DatabaseConfig from "./database-config";
 import EventModel from "./models/event-model";
@@ -17,7 +19,7 @@ export default class ParseServer implements Database {
    * @param AsyncStorage Module from the React Native Async Storage library
    * @returns The same instance of ParseServer that it was first instantiated with
    */
-  public static getInstance(Parse: any, AsyncStorage: any): Database {
+  public static getInstance(): Database {
     if (this.instance == null) {
       this.instance = new ParseServer(Parse, AsyncStorage);
     }
