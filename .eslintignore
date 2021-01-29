@@ -1,0 +1,9 @@
+# Dont lint node_modules
+node_modules
+
+# Dont lint expo folders
+.expo
+.expo_shared
+
+# Dont lint VS Code workspace settings folder
+.vscode
