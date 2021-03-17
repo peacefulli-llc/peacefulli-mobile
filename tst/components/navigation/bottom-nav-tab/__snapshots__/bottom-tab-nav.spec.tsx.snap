@@ -1,0 +1,333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomTabNav Tests font not loaded 1`] = `
+<AppLoading
+  onError={[Function]}
+  onFinish={[Function]}
+  startAsync={[Function]}
+/>
+`;
+
+exports[`BottomTabNav Tests loading nav with the HOME default 1`] = `
+<BottomTabNavigator
+  initialRouteName="HOME"
+  tabBarOptions={
+    Object {
+      "activeTintColor": "#FF00F0",
+      "inactiveTintColor": "#6900FF",
+      "labelStyle": Object {
+        "fontFamily": "pt_sans_bold",
+        "fontWeight": "bold",
+      },
+      "style": Object {
+        "paddingHorizontal": 30,
+        "paddingTop": 5,
+      },
+    }
+  }
+>
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="LIST"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "LIST",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="HOME"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "HOME",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="SUPPORT"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "SUPPORT",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="PROFILE"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "PROFILE",
+      }
+    }
+  />
+</BottomTabNavigator>
+`;
+
+exports[`BottomTabNav Tests loading nav with the LIST default 1`] = `
+<BottomTabNavigator
+  initialRouteName="LIST"
+  tabBarOptions={
+    Object {
+      "activeTintColor": "#FF00F0",
+      "inactiveTintColor": "#6900FF",
+      "labelStyle": Object {
+        "fontFamily": "pt_sans_bold",
+        "fontWeight": "bold",
+      },
+      "style": Object {
+        "paddingHorizontal": 30,
+        "paddingTop": 5,
+      },
+    }
+  }
+>
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="LIST"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "LIST",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="HOME"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "HOME",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="SUPPORT"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "SUPPORT",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="PROFILE"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "PROFILE",
+      }
+    }
+  />
+</BottomTabNavigator>
+`;
+
+exports[`BottomTabNav Tests loading nav with the PROFILE default 1`] = `
+<BottomTabNavigator
+  initialRouteName="PROFILE"
+  tabBarOptions={
+    Object {
+      "activeTintColor": "#FF00F0",
+      "inactiveTintColor": "#6900FF",
+      "labelStyle": Object {
+        "fontFamily": "pt_sans_bold",
+        "fontWeight": "bold",
+      },
+      "style": Object {
+        "paddingHorizontal": 30,
+        "paddingTop": 5,
+      },
+    }
+  }
+>
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="LIST"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "LIST",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="HOME"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "HOME",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="SUPPORT"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "SUPPORT",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="PROFILE"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "PROFILE",
+      }
+    }
+  />
+</BottomTabNavigator>
+`;
+
+exports[`BottomTabNav Tests loading nav with the SUPPORT default 1`] = `
+<BottomTabNavigator
+  initialRouteName="SUPPORT"
+  tabBarOptions={
+    Object {
+      "activeTintColor": "#FF00F0",
+      "inactiveTintColor": "#6900FF",
+      "labelStyle": Object {
+        "fontFamily": "pt_sans_bold",
+        "fontWeight": "bold",
+      },
+      "style": Object {
+        "paddingHorizontal": 30,
+        "paddingTop": 5,
+      },
+    }
+  }
+>
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="LIST"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "LIST",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="HOME"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "HOME",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="SUPPORT"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "SUPPORT",
+      }
+    }
+  />
+  <Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="PROFILE"
+    options={
+      Object {
+        "tabBarIcon": [Function],
+        "tabBarLabel": "PROFILE",
+      }
+    }
+  />
+</BottomTabNavigator>
+`;
