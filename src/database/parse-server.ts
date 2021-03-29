@@ -1,4 +1,4 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import { AsyncStorage } from "react-native";
 import Parse from "parse/react-native";
 import Database from "./database";
 import DatabaseConfig from "./database-config";

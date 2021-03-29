@@ -7,7 +7,7 @@ describe("ParseServer Tests", () => {
 
   beforeAll(() => {
     ParseMock = jest.createMockFromModule("parse");
-    database = ParseServer.getInstance(ParseMock, null);
+    database = ParseServer.getInstance();
   });
 
   afterEach(() => {
@@ -15,7 +15,7 @@ describe("ParseServer Tests", () => {
   });
 
   it("initialize ParseServer", async () => {
-    const actualDatabase = ParseServer.getInstance(ParseMock, null);
+    const actualDatabase = ParseServer.getInstance();
     expect(actualDatabase).toBe(database);
 
     expect(ParseMock.setAsyncStorage).toHaveBeenCalledTimes(1);

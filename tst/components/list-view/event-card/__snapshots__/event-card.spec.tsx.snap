@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventCard Tests event card with favorite disabled 1`] = `
+<View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 16,
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginRight": 6,
+          "width": "33%",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "url",
+          }
+        }
+        style={
+          Object {
+            "height": 120,
+            "marginRight": 8,
+            "width": 120,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "width": "58%",
+        }
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#6900FF",
+            "fontFamily": "pt_sans_regular",
+            "fontSize": 14,
+          }
+        }
+      >
+        date
+      </Text>
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#000000",
+            "fontFamily": "pt_sans_bold",
+            "fontSize": 16,
+            "marginTop": 4,
+          }
+        }
+      >
+        title
+      </Text>
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={3}
+        style={
+          Object {
+            "color": "#6C6C6C",
+            "flexWrap": "wrap",
+            "fontFamily": "pt_sans_regular",
+            "fontSize": 11,
+            "marginTop": 4,
+          }
+        }
+      >
+        description
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginTop": 4,
+          }
+        }
+      >
+        <Text />
+        <Text
+          numberOfLines={1}
+          onPress={[Function]}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "pt_sans_italic",
+              "fontSize": 10,
+              "marginLeft": 4,
+            }
+          }
+        >
+          location
+        </Text>
+      </View>
+    </View>
+    <Text />
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#CCCCCC",
+        "height": 2,
+        "marginTop": 16,
+        "opacity": 0.5,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`EventCard Tests event card with favorite enabled 1`] = `
+<View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 16,
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginRight": 6,
+          "width": "33%",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "url",
+          }
+        }
+        style={
+          Object {
+            "height": 120,
+            "marginRight": 8,
+            "width": 120,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "width": "58%",
+        }
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#6900FF",
+            "fontFamily": "pt_sans_regular",
+            "fontSize": 14,
+          }
+        }
+      >
+        date
+      </Text>
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#000000",
+            "fontFamily": "pt_sans_bold",
+            "fontSize": 16,
+            "marginTop": 4,
+          }
+        }
+      >
+        title
+      </Text>
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={3}
+        style={
+          Object {
+            "color": "#6C6C6C",
+            "flexWrap": "wrap",
+            "fontFamily": "pt_sans_regular",
+            "fontSize": 11,
+            "marginTop": 4,
+          }
+        }
+      >
+        description
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "marginTop": 4,
+          }
+        }
+      >
+        <Text />
+        <Text
+          numberOfLines={1}
+          onPress={[Function]}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "pt_sans_italic",
+              "fontSize": 10,
+              "marginLeft": 4,
+            }
+          }
+        >
+          location
+        </Text>
+      </View>
+    </View>
+    <Text />
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#CCCCCC",
+        "height": 2,
+        "marginTop": 16,
+        "opacity": 0.5,
+      }
+    }
+  />
+</View>
+`;
