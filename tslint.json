@@ -3,6 +3,7 @@
   "extends": ["tslint:recommended"],
   "rulesDirectory": [],
   "rules": {
+    "no-unused-declaration": true,
     "no-empty-interface": false,
     "max-line-length": {
       "options": [120]

@@ -9,8 +9,6 @@ import {
 import Icon from "react-native-vector-icons/FontAwesome5";
 import { Divider } from "react-native-elements";
 import { styles } from "./style";
-import { customFonts } from "../../../constants/font-constants";
-import * as Font from "expo-font";
 import { Color } from "../../../constants/color-constants";
 
 export interface EventCardProps {
@@ -31,7 +29,6 @@ export class EventCard extends PureComponent<EventCardProps, EventCardState> {
   constructor(props: EventCardProps) {
     super(props);
     this.state = {
-      fontLoaded: false,
       isFavorite: this.props.isFavorite ?? false,
     };
 

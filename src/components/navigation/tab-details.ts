@@ -3,14 +3,7 @@ import { Home } from "../home";
 import { Support } from "../support";
 import { Profile } from "../profile";
 import { ListView } from "../list-view";
-
-// TODO: This needs to be localized
-enum TabName {
-  SUPPORT = "SUPPORT",
-  HOME = "HOME",
-  LIST = "LIST",
-  PROFILE = "PROFILE",
-}
+import { NavTabName } from "../../store/states/nav/nav-state";
 
 export type TabDetails = {
   name: string;
@@ -20,22 +13,22 @@ export type TabDetails = {
 
 export class TabInfo {
   public static readonly SUPPORT: TabDetails = {
-    name: TabName.SUPPORT,
+    name: NavTabName.SUPPORT,
     component: Support,
     icon: "hand-holding-heart",
   };
   public static readonly HOME: TabDetails = {
-    name: TabName.HOME,
+    name: NavTabName.HOME,
     component: Home,
     icon: "home",
   };
   public static readonly LIST: TabDetails = {
-    name: TabName.LIST,
+    name: NavTabName.LIST,
     component: ListView,
     icon: "list",
   };
   public static readonly PROFILE: TabDetails = {
-    name: TabName.PROFILE,
+    name: NavTabName.PROFILE,
     component: Profile,
     icon: "user-circle",
   };
